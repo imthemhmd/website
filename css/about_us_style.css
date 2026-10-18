@@ -193,17 +193,24 @@ header {
     display: flex;
     flex-direction: column;
 
+
     margin: 20px 100px;
+}
+
+.brand-why{
+    width: 100%;
 }
 
 .brand-why h5 {
     color: var(--secondary-color);
     font-size: 30px;
+    white-space: nowrap;
 }
 
 .brand-why p {
     color: var(--primary--color);
     font-size: 20px;
+
 }
 
 
@@ -489,8 +496,6 @@ footer {
     }
 }
 
-
-
 @media (max-width:768px) {
     .search-bar {
         display: none;
@@ -571,11 +576,28 @@ footer {
 }
 
 @media(max-width:600px) {
+    .section-brand-description {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .brand-credibility{
+        width: 95%;
+        margin: 20px auto;
+    }
+
     .features-brand {
         display: flex;
         flex-direction: column;
     }
-
+    .missions{
+        width: 95%;
+        margin: 0px auto;
+    }
+    .team-description{
+        width: 95%;
+        margin: 20px auto;
+    }
 
     .content-footer {
         margin: 20px;

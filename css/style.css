@@ -127,7 +127,8 @@ hr {
 }
 
 .hero-content {
-    width: 100%;
+    width: 95%;
+    max-width: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,22 +136,20 @@ hr {
 }
 
 .img-hero {
-    width: 95%;
-    max-width: 1400px;
+    width: 100%;
     height: auto;
     border-radius: 50px;
+    display: block;
 
 }
 
 .link-hero-banner {
     position: absolute;
-    bottom: 150px;
-    right: 300px;
-    transform: translate(-50%, -50%);
+    bottom: 20%;
+    right: 15%;
 
     text-decoration: none;
     color: var(--primary--color);
-
     border: 2px solid var(--color-symbol);
     border-radius: 10px;
     background-color: var(--color-symbol);
@@ -753,9 +752,6 @@ footer {
     }
 
     .link-hero-banner {
-        position: absolute;
-        bottom: 70px;
-        right: 200px;
         font-size: 12px;
         padding: 5px 10px;
     }
@@ -832,8 +828,6 @@ footer {
     }
 
     .link-hero-banner {
-        bottom: 25px;
-        right: 60px;
         padding: 2px 5px;
     }
 

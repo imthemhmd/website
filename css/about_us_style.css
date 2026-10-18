@@ -197,7 +197,7 @@ header {
     margin: 20px 100px;
 }
 
-.brand-why{
+.brand-why {
     width: 100%;
 }
 
@@ -576,12 +576,17 @@ footer {
 }
 
 @media(max-width:600px) {
+    .name-site {
+        font-size: 10px;
+    }
+
     .section-brand-description {
         width: 95%;
         margin: 0 auto;
         margin-top: 20px;
     }
-    .brand-credibility{
+
+    .brand-credibility {
         width: 95%;
         margin: 20px auto;
     }
@@ -590,11 +595,13 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    .missions{
+
+    .missions {
         width: 95%;
         margin: 0px auto;
     }
-    .team-description{
+
+    .team-description {
         width: 95%;
         margin: 20px auto;
     }

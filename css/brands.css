@@ -250,7 +250,7 @@ header {
     font-weight: bolder;
 }
 
-.img-brands-content{
+.img-brands-content {
     width: 60%;
     margin: 0 auto;
     border-radius: 20px;
@@ -269,7 +269,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 
 }
 
@@ -422,6 +422,10 @@ footer {
         margin: 0PX 15PX 5PX 15PX;
     }
 
+    .icon-search {
+        display: block;
+    }
+
     .feature-brands {
         display: grid;
         grid-template-columns: 1fr;
@@ -440,7 +444,8 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-    .img-brands-content{
+
+    .img-brands-content {
         width: 100%;
     }
 
@@ -498,6 +503,10 @@ footer {
 
     .search-bar {
         display: none;
+    }
+
+    .icon-search {
+        display: block;
     }
 
     .my-navigation-bar a {

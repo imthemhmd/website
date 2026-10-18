@@ -497,7 +497,12 @@ footer {
     }
 
     .icon-search {
-        display: block;
+        display: flex;
+    }
+
+    .my-navigation-bar a {
+        font-size: 12px;
+        margin: 0PX 15PX 5PX 15PX;
     }
 
     .section-brand-description {
@@ -518,9 +523,49 @@ footer {
         margin-right: 10px;
     }
 
-    .footer-informations {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
+    .content-footer {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        /* دو ستون */
+        grid-template-rows: auto auto;
+        /* دو ردیف */
+        gap: 30px 60px;
+        padding: 30px 20px;
+        align-items: start;
+        justify-items: start;
+        justify-content: center;
+
+    }
+
+    .contact-us,
+    .site-access,
+    .customer-service,
+    .contact-informations {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .icon-contact-us {
+        display: flex;
+        gap: 25px;
+        margin-top: 0;
+    }
+
+    .icon-contact-us a {
+        margin-left: 0;
+    }
+
+    .contact-informations div {
+        gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .contact-information p {
+        padding-right: 0;
     }
 
 }
@@ -536,11 +581,34 @@ footer {
         margin: 20px;
     }
 
-    .my-navigation-bar{
+    .my-navigation-bar {
         white-space: nowrap;
 
     }
-    .my-navigation-bar a{
+
+    .my-navigation-bar a {
         margin: 0px 15px 5px 15px;
     }
+
+
+    .content-footer {
+        grid-template-columns: 40vw 40vw;
+    }
+
+    .content-footer h1 {
+        font-size: 15px;
+    }
+
+    .content-footer h3 {
+        font-size: 10px;
+    }
+
+    .content-footer span {
+        font-size: 8px;
+    }
+
+    .content-footer p {
+        font-size: 10px;
+    }
+
 }

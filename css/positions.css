@@ -6,7 +6,6 @@
 }
 
 
-
 .customers {
     width: fit-content;
     background-color: var(--primary--color);
@@ -23,12 +22,43 @@
 
     transition: 0.5s all;
 }
+.options-customers{
+    position: relative;
+}
+.support, .chat-ai, .chat-admin{
+    position: absolute;
+    white-space: nowrap;
+}
 
 .customers:hover {
     background-color: white;
     color: var(--primary--color);
     border: 2px solid var(--primary--color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contact-us-fixed {
     width: fit-content;

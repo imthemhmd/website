@@ -418,7 +418,7 @@ footer {
     }
 
     .my-navigation-bar a {
-        white-space: nowrap;
+        font-size: 12px;
         margin: 0PX 15PX 5PX 15PX;
     }
 
@@ -510,11 +510,31 @@ footer {
     }
 
     .my-navigation-bar a {
+        font-size: 10px;
         white-space: nowrap;
-        margin: 0PX 15PX 5PX 15PX;
     }
 
     .brands-img-info {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-informations {
+        grid-template-columns: 40vw 40vw;
+    }
+
+    .footer-informations h1 {
+        font-size: 15px;
+    }
+
+    .footer-informations h3 {
+        font-size: 10px;
+    }
+
+    .footer-informations span {
+        font-size: 8px;
+    }
+
+    .contact-information p {
+        font-size: 10px;
     }
 }

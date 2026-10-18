@@ -1,0 +1,546 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary--color: #011A39;
+    --secondary-color: #041F45;
+    --background-color: #EFF6FE;
+    --color-symbol: #F7C41D;
+    --color-font: white;
+}
+
+@font-face {
+    font-family: all_text;
+    src: url(assets/font/Gandom.woff);
+}
+
+
+
+/* ======== Body ======== */
+body {
+    height: fit-content;
+    font-family: all_text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ======== Header ======== */
+header {
+    margin: 5px;
+}
+
+.my-header {
+    background-color: var(--primary--color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 20px;
+}
+
+.brand-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-site {
+    display: flex;
+    align-items: center;
+}
+
+.logo-site img {
+    width: 20%;
+}
+
+.name-site {
+    color: var(--color-font);
+}
+
+.search-bar input {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px 10px 200px;
+
+}
+
+.login-purchase {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0px 50px 0px 50px;
+
+    color: var(--color-font);
+
+}
+
+.icon-search {
+    display: none;
+}
+
+/* ======== Navigation Bar ======== */
+
+.my-navigation-bar {
+    background-color: var(--secondary-color);
+    padding-top: 10px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 300px;
+}
+
+.my-navigation-bar a {
+    color: var(--color-font);
+    text-decoration: none;
+
+    margin: 0PX 30PX 5PX 30PX;
+}
+
+.action {
+    border-bottom: 2px solid var(--color-symbol);
+
+}
+
+/* =========== Section img About Us ========== */
+
+.img-about-us img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+
+/* ====== Info About ====== */
+.info-about {
+    display: flex;
+    flex-direction: column;
+
+
+    margin-right: 30px;
+    margin-top: 80px;
+}
+
+.info-about h3 {
+    color: var(--color-font);
+    font-size: 50px;
+}
+
+.line-yellow {
+    width: 80px;
+    height: 2px;
+    background-color: var(--color-symbol);
+    /* background-color: rgb(255, 200, 0); */
+    margin-bottom: 20px;
+}
+
+.info-about p {
+    color: var(--color-font);
+    font-size: 20px;
+}
+
+/* ========== Section Description ========== */
+.section-brand-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgb(149, 147, 147);
+
+    margin: 20px 100px;
+    padding: 10px 20px 10px 0px;
+}
+
+.info-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-description p {
+    color: var(--secondary-color);
+    font-size: 15px;
+}
+
+.info-description h3 {
+    color: var(--primary--color);
+    font-size: 30px;
+}
+
+.section-brand-description img {
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+/* ========== Brand Credibility ========== */
+.brand-credibility {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px 100px;
+}
+
+.brand-why h5 {
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+
+.brand-why p {
+    color: var(--primary--color);
+    font-size: 20px;
+}
+
+
+.features-brand {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px 0px rgb(128, 128, 128);
+    padding: 20px 20px;
+    background-color: var(--background-color);
+}
+
+.feature i {
+    border: 1px solid var(--secondary-color);
+    border-radius: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 30px;
+    background-color: rgb(240, 244, 255);
+}
+
+.feature span {
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.feature p {
+    color: var(--primary--color);
+    margin-top: 10px;
+
+}
+
+/* ========== Missions ========== */
+.missions {
+    background-color: #011A39;
+    margin: 10px 100px;
+    border-radius: 20px;
+    color: var(--color-font);
+    padding: 20px 20px 20px 0px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.missions i {
+    font-size: 40px;
+}
+
+.missions span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.missiona-description p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* ========== Team Description ========== */
+.team-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 10px 100px;
+
+    border: 1px solid var(--primary--color);
+    border-radius: 20px;
+    background-color: var(--background-color);
+}
+
+.description-team {
+    margin-right: 10px;
+}
+
+.content-description-team span {
+    color: var(--primary--color);
+    font-size: 15px;
+}
+
+.content-description-team h5 {
+    color: var(--primary--color);
+    font-size: 20px;
+}
+
+.content-description-team p {
+    color: var(--primary--color);
+    font-size: 15px;
+
+}
+
+.features-team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+}
+
+.features-team i {
+    color: var(--primary--color);
+    font-size: 20px;
+}
+
+.features-team p {
+    color: var(--primary--color);
+    font-size: 15px;
+}
+
+.img-team {
+    margin-left: 10px;
+}
+
+.img-team img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* ======== Footer Web Site ======== */
+footer {
+    width: 100%;
+
+    background-image: url(assets/img/footer_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.footer-informations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+/* ======== Contact Us ======== */
+.contact-us {
+    color: var(--color-font);
+    padding: 20px 0px;
+}
+
+.contact-us h3 {
+    font-weight: normal;
+}
+
+.icon-contact-us {
+
+    margin-top: 10px;
+
+}
+
+.icon-contact-us a {
+    text-decoration: none;
+    color: var(--color-font);
+
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+/* ======== Site Access ======== */
+.site-access {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+.site-access span {
+    color: var(--color-font);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.site-access a {
+
+    color: var(--color-font);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* ======== Customer Service ======== */
+.customer-service {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+.customer-service span {
+    color: var(--color-font);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.customer-service a {
+    color: var(--color-font);
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+/* ======== Contact Information ======== */
+.contact-informations {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+.contact-informations span {
+    color: var(--color-font);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-informations div {
+    display: flex;
+    align-items: center;
+
+    color: var(--color-font);
+    margin-bottom: 10px;
+
+}
+
+.contact-information p {
+    padding-right: 10px;
+
+}
+
+/* ======== Hr Footer======== */
+.hr-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.hr-footer hr {
+    width: 90%;
+    opacity: 0.2;
+}
+
+/* ======== Site Rights======== */
+.site-rights {
+    display: flex;
+    justify-content: center;
+
+}
+
+.site-rights p {
+    color: white;
+    padding: 5px 0px;
+}
+
+
+
+
+
+
+
+@media(max-width:1024px) {
+    .footer-informations {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .search-bar {
+        display: none;
+    }
+
+    .icon-search {
+        display: block;
+    }
+
+    .section-brand-description {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-brand-description img {
+        width: 100%;
+    }
+
+    .team-description {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .img-team {
+        margin-right: 10px;
+    }
+
+    .footer-informations {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+}
+
+@media(max-width:600px) {
+    .features-brand {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .content-footer {
+        margin: 20px;
+    }
+
+    .my-navigation-bar{
+        white-space: nowrap;
+
+    }
+    .my-navigation-bar a{
+        margin: 0px 15px 5px 15px;
+    }
+}

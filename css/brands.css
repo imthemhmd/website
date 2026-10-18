@@ -1,0 +1,511 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary--color: #011A39;
+    --secondary-color: #041F45;
+    --background-color: #EFF6FE;
+    --color-symbol: #F7C41D;
+    --color-font: white;
+}
+
+@font-face {
+    font-family: all_text;
+    src: url(assets/font/Gandom.woff);
+}
+
+
+
+/* ======== Body ======== */
+body {
+    height: fit-content;
+    font-family: all_text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ======== Header ======== */
+header {
+    margin: 5px;
+}
+
+.my-header {
+    background-color: var(--primary--color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 20px;
+}
+
+.brand-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-site {
+    display: flex;
+    align-items: center;
+}
+
+.logo-site img {
+    width: 20%;
+}
+
+.name-site {
+    color: var(--color-font);
+}
+
+.search-bar input {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px 10px 200px;
+
+}
+
+.login-purchase {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0px 50px 0px 50px;
+
+    color: var(--color-font);
+
+}
+
+.icon-search {
+    display: none;
+}
+
+/* ======== Navigation Bar ======== */
+.my-navigation-bar {
+    background-color: var(--secondary-color);
+    padding-top: 10px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 300px;
+}
+
+.my-navigation-bar a {
+    color: var(--color-font);
+    text-decoration: none;
+
+    margin: 0PX 30PX 5PX 30PX;
+}
+
+
+.action {
+    border-bottom: 2px solid var(--color-symbol);
+
+}
+
+/* ========= Section Banner Brands ========= */
+
+.banner-brands img {
+
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+
+/* ========== Our Brands ========== */
+.our-brands {
+    margin: 20px 50px;
+
+}
+
+.title-brand h6 {
+    font-size: 20px;
+}
+
+.title-brand span {
+    font-size: 15px;
+}
+
+.line-yellow {
+    width: 80px;
+    height: 2px;
+    background-color: var(--color-symbol);
+    /* background-color: rgb(255, 200, 0); */
+    margin-bottom: 10px;
+}
+
+.brands-img-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.brand-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.brand-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--primary--color);
+}
+
+.brand-info img {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.brand-info h4 {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+/* ========== Why Our Brands?========== */
+.why-our-brands {
+    background-color: var(--background-color);
+    margin: 20px 50px;
+
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.why-our-brands span {
+    color: var(--primary--color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.feature-brands {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature i {
+    color: var(--primary--color);
+    font-size: 30px;
+}
+
+.feature span {
+    color: var(--primary--color);
+    font-size: 20px;
+}
+
+.feature p {
+    color: var(--primary--color);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.gray-line {
+    width: 1px;
+    height: 80px;
+    background-color: #011A39;
+}
+
+/* ========== Why Our Brands Description ========== */
+.why-our-brands-description {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-font);
+    box-shadow: 0px 0px 5px 5px var(--background-color);
+    border-radius: 10px;
+    margin: 10px 50px;
+
+    padding: 20px;
+}
+
+.brand-description h4 {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.brand-description p {
+    color: #011A39;
+    font-weight: bolder;
+}
+
+.img-brands-content{
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+/* ======== Footer Web Site ======== */
+footer {
+    width: 100%;
+
+    background-image: url(assets/img/footer_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+}
+
+.footer-informations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+
+}
+
+/* ======== Contact Us ======== */
+.contact-us {
+    color: var(--color-font);
+    padding: 20px 0px;
+}
+
+.contact-us h3 {
+    font-weight: normal;
+}
+
+.icon-contact-us {
+
+    margin-top: 10px;
+
+}
+
+.icon-contact-us a {
+    text-decoration: none;
+    color: var(--color-font);
+
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+/* ======== Site Access ======== */
+.site-access {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+.site-access span {
+    color: var(--color-font);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.site-access a {
+
+    color: var(--color-font);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* ======== Customer Service ======== */
+.customer-service {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+.customer-service span {
+    color: var(--color-font);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.customer-service a {
+    color: var(--color-font);
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+/* ======== Contact Information ======== */
+.contact-informations {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+.contact-informations span {
+    color: var(--color-font);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-informations div {
+    display: flex;
+    align-items: center;
+
+    color: var(--color-font);
+    margin-bottom: 10px;
+
+}
+
+.contact-information p {
+    padding-right: 10px;
+
+}
+
+/* ======== Hr Footer======== */
+.hr-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.hr-footer hr {
+    width: 90%;
+    opacity: 0.2;
+}
+
+/* ======== Site Rights======== */
+.site-rights {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.site-rights p {
+    color: var(--color-font);
+    padding: 5px 0px;
+    opacity: 0.2;
+}
+
+.hide-header {
+    display: none;
+}
+
+
+
+@media (max-width:768px) {
+    .name-site {
+        font-size: 10px;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .my-navigation-bar a {
+        white-space: nowrap;
+        margin: 0PX 15PX 5PX 15PX;
+    }
+
+    .feature-brands {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .gray-line {
+        display: none;
+    }
+
+    .feature {
+        margin-bottom: 50px;
+    }
+
+    .why-our-brands-description {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .img-brands-content{
+        width: 100%;
+    }
+
+    .footer-informations {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        /* دو ستون */
+        grid-template-rows: auto auto;
+        /* دو ردیف */
+        gap: 30px 60px;
+        padding: 30px 20px;
+        align-items: start;
+        justify-items: start;
+        justify-content: center;
+
+    }
+
+    .contact-us,
+    .site-access,
+    .customer-service,
+    .contact-informations {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .icon-contact-us {
+        display: flex;
+        gap: 25px;
+        margin-top: 0;
+    }
+
+    .icon-contact-us a {
+        margin-left: 0;
+    }
+
+    .contact-informations div {
+        gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .contact-information p {
+        padding-right: 0;
+    }
+
+}
+
+@media (max-width:600px) {
+    .name-site {
+        font-size: 10px;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .my-navigation-bar a {
+        white-space: nowrap;
+        margin: 0PX 15PX 5PX 15PX;
+    }
+
+    .brands-img-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -513,9 +513,10 @@ main {
 
 /* ======== Footer Web Site ======== */
 footer {
+    background-color: var(--primary--color);
     width: 100%;
 
-    background-image: url(assets/img/footer_background.png);
+    background-image: url(../assets/img/footer_background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

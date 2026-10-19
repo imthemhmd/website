@@ -2,91 +2,54 @@
     --primary--color: #011A39;
     --secondary-color: #041F45;
     --color-symbol: #F7C41D;
-
+    --fab-size: clamp(56px, 6vw, 76px);
+    --fab-height: 44px;
+    --fab-gap: 12px;
+    --fab-gap-right: 4px;
+    --fab-edge: 16px;
 }
 
-
-.support {
-    width: 5%;
-    background-color: var(--primary--color);
-    color: white;
-    padding: 15px;
-    border: 2px solid white;
-    border-radius: 500px;
-
-    position: fixed;
-    bottom: 3%;
-    right: 0.8%;
-    font-size: 10px;
-    z-index: 9999;
-
-    transition: 0.5s all;
-}
-
-.chat-ai {
-    width: 5%;
-    background-color: var(--color-symbol);
-    color: var(--primary--color);
-    padding: 15px;
-    border: 2px solid var(--primary--color);
-    border-radius: 500px;
-
-    position: fixed;
-    bottom: 3%;
-    right: 0.8%;
-    font-size: 10px;
-    z-index: 9998;
-
-    transition: 0.5s all;
-}
-.chat-ai-move{
-    bottom: 11.5%;
-}
-
+.support,
+.chat-ai,
 .chat-admin {
-    width: 5%;
-    background-color: var(--color-symbol);
-    color: var(--primary--color);
+    position: fixed;
+    bottom: var(--fab-edge);
+    right: var(--fab-edge);
+
+    width: var(--fab-size);
+    display: grid;
+    place-items: center;
     padding: 15px;
-    border: 2px solid var(--primary--color);
+
     border-radius: 500px;
     white-space: nowrap;
-
-    position: fixed;
-    bottom: 3%;
-    right: 0.8%;
     font-size: 10px;
-    z-index: 9998;
+    text-align: center;
+    transition: 0.6s all;
+}
 
-    transition: 0.5s all;
+.support {
+    background-color: var(--primary--color);
+    color: white;
+    border: 2px solid white;
+    z-index: 9999;
+}
+
+.chat-ai,
+.chat-admin {
+    background-color: var(--color-symbol);
+    color: var(--primary--color);
+    border: 2px solid var(--primary--color);
+    z-index: 9998;
+}
+
+.chat-ai-move {
+    bottom: calc(var(--fab-edge) + var(--fab-height) + var(--fab-gap));
 }
 
 .chat-admin-move {
-    right: 6%;
+    right: calc(var(--fab-edge) + var(--fab-size) + var(--fab-gap-right));
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .contact-us-fixed {

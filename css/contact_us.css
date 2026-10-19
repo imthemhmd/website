@@ -1,0 +1,475 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --primary--color: #011A39;
+    --secondary-color: #041F45;
+    --background-color: #EFF6FE;
+    --color-symbol: #F7C41D;
+    --color-font: white;
+
+
+}
+
+@font-face {
+    font-family: all_text;
+    src: url(../assets/font/Gandom.woff);
+}
+
+
+
+/* ======== Body ======== */
+body {
+    height: fit-content;
+    font-family: all_text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ======== Header ======== */
+header {
+    margin: 5px;
+}
+
+.my-header {
+    background-color: var(--primary--color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 20px;
+}
+
+.brand-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-site {
+    display: flex;
+    align-items: center;
+}
+
+.logo-site img {
+    width: 20%;
+}
+
+.name-site {
+    color: var(--color-font);
+}
+
+.search-bar input {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px 10px 200px;
+
+}
+
+.login-purchase {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0px 50px 0px 50px;
+
+    color: var(--color-font);
+
+}
+
+.icon-search {
+    display: none;
+}
+
+/* ======== Navigation Bar ======== */
+
+.my-navigation-bar {
+    background-color: var(--secondary-color);
+    padding-top: 10px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 300px;
+}
+
+.my-navigation-bar a {
+    color: var(--color-font);
+    text-decoration: none;
+
+    margin: 0px 4% 5px 3%;
+}
+
+.action {
+    border-bottom: 2px solid var(--color-symbol);
+
+}
+
+/* ======== Banner Contact Us ======== */
+
+.banner-contact-us img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+/* ======== Contact Channels ======== */
+
+.contact-channels {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.contact-channel {
+    padding: 20px;
+    border: 2px solid var(--background-color);
+    box-shadow: 0px 0px 5px 5px var(--background-color);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-channel i {
+    color: var(--color-symbol);
+    font-size: 300%;
+}
+
+.contact-channel span {
+    color: var(--primary--color);
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+.contact-channel p {
+    color: var(--primary--color);
+    font-size: 80%;
+
+}
+
+/* ======== More Contact ======== */
+
+.more-contact {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+    grid-template-areas: "form empty"
+        "form img";
+
+}
+
+.form-message {
+    grid-area: form;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 5px var(--background-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+
+}
+
+.form-message p {
+    font-size: 120%;
+}
+
+.form-message span {
+    border-bottom: 2px solid var(--color-symbol);
+}
+
+.form-group {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+
+}
+
+.form-group input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid hsl(210, 13%, 50%, 0.5);
+
+}
+
+.form-group textarea {
+
+    height: 100px;
+    padding: 10px;
+
+    border: 1px solid hsl(210, 13%, 50%, 0.5);
+    border-radius: 5px;
+}
+
+.btn-send-message {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-symbol);
+    color: var(--primary--color);
+}
+
+.img-support {
+    grid-area: img;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* ======== Feature Contact US ======== */
+.feature-contact-us {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    align-items: center;
+
+
+    border: 1px solid hsl(210, 13%, 50%, 0.5);
+    border-radius: 20px;
+    background-color: #F4F9FE;
+}
+
+.feature {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.feature i {
+    color: var(--color-symbol);
+    border: 1px solid var(--color-symbol);
+    padding: 20px;
+    border-radius: 50%;
+    background-color: hsl(46, 93%, 54%, 0.2);
+    box-shadow: 0px 0px 2px px var(--color-symbol);
+    font-size: 120%;
+}
+
+.content-feature span {
+    white-space: nowrap;
+    color: var(--primary--color);
+    font-weight: bolder;
+}
+
+.content-feature p {
+    white-space: nowrap;
+    color: var(--primary--color);
+    opacity: 0.4;
+}
+
+
+
+/* ======== Footer Web Site ======== */
+footer {
+    background-color: var(--primary--color);
+    width: 100%;
+
+    background-image: url(../assets/img/footer_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.footer-informations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
+    gap: 20px;
+    justify-items: start;
+    justify-content: center;
+}
+
+/* ======== Contact Us ======== */
+.contact-us {
+    color: var(--color-font);
+    padding: 20px 0px;
+}
+
+.contact-us h3 {
+    font-weight: normal;
+}
+
+.icon-contact-us {
+
+    margin-top: 10px;
+
+}
+
+.icon-contact-us a {
+    text-decoration: none;
+    color: var(--color-font);
+
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+/* ======== Site Access ======== */
+.site-access {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+.site-access span {
+    color: var(--color-font);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.site-access a {
+
+    color: var(--color-font);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* ======== Customer Service ======== */
+.customer-service {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+.customer-service span {
+    color: var(--color-font);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.customer-service a {
+    color: var(--color-font);
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+/* ======== Contact Information ======== */
+.contact-informations {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+}
+
+.contact-informations span {
+    color: var(--color-font);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-informations div {
+    display: flex;
+    align-items: center;
+
+    color: var(--color-font);
+    margin-bottom: 10px;
+
+}
+
+.contact-information p {
+    padding-right: 10px;
+
+}
+
+/* ======== Hr Footer======== */
+.hr-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.hr-footer hr {
+    width: 90%;
+    opacity: 0.2;
+}
+
+/* ======== Site Rights======== */
+.site-rights {
+    display: flex;
+    justify-content: center;
+
+}
+
+.site-rights p {
+    color: var(--color-font);
+    padding: 5px 0px;
+    opacity: 0.2;
+    font-size: 80%;
+}
+
+
+
+
+@media (max-width:768px) {
+    .feature {
+        margin: 20px 10%;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .icon-search {
+        display: block;
+    }
+
+
+}
+
+
+
+
+@media (max-width:600px) {
+    .feature-contact-us {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .name-site {
+        font-size: 10px;
+    }
+
+    .my-navigation-bar a {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .more-contact {
+        display: flex;
+        flex-direction: column;
+    }
+}

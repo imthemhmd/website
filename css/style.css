@@ -652,6 +652,8 @@ footer {
     color: var(--color-font);
     padding: 5px 0px;
     opacity: 0.2;
+    font-size: 80%;
+
 }
 
 .hide-header {
@@ -675,22 +677,24 @@ footer {
 
 }
 
-.all_products{
+.all_products {
     margin-top: 50px;
 }
 
-.title-part{
+.title-part {
     display: flex;
     align-items: center;
     gap: 10px;
-    
-    
+
+
 }
-.title-part a{
+
+.title-part a {
     color: var(--primary--color);
-    
+
 }
-.home-page{
+
+.home-page {
     display: flex;
     align-items: center;
     gap: 5px;

@@ -2,11 +2,10 @@
     --primary--color: #011A39;
     --secondary-color: #041F45;
     --color-symbol: #F7C41D;
-    --fab-size: clamp(56px, 6vw, 76px);
     --fab-height: 44px;
-    --fab-gap: 12px;
-    --fab-gap-right: 4px;
+    --fab-gap: 8px;
     --fab-edge: 16px;
+    --fab-width: 100px;
 }
 
 .support,
@@ -16,15 +15,18 @@
     bottom: var(--fab-edge);
     right: var(--fab-edge);
 
-    width: var(--fab-size);
-    display: grid;
-    place-items: center;
-    padding: 15px;
+    width: var(--fab-width);
+    height: var(--fab-height);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border-radius: 500px;
     white-space: nowrap;
-    font-size: 10px;
-    text-align: center;
+    font-size: clamp(10px, 1.2vw, 13px);
     transition: 0.6s all;
 }
 
@@ -48,9 +50,8 @@
 }
 
 .chat-admin-move {
-    right: calc(var(--fab-edge) + var(--fab-size) + var(--fab-gap-right));
+    right: calc(var(--fab-edge) + var(--fab-width) + var(--fab-gap));
 }
-
 
 .contact-us-fixed {
     width: fit-content;

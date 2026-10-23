@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- ======== Register Login ======== -->
 
     <!-- ======== Header ======== -->
     <header>
@@ -34,7 +35,9 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
 
-                <i class="fa-solid fa-user-plus"></i>
+                <a href="register_login.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                </a>
             </div>
         </div>
         <!-- ======== Navigation Bar ======== -->
@@ -384,14 +387,88 @@
     </footer>
     <div class="customers" id="customers-id">
         <span class="support">پشتیبانی</span>
-        <p class="chat-ai" id="chat-ai">چت AI</p>
-        <p class="chat-admin" id="chat-admin">چت Admin</p>
+        <a class="chat-ai" id="open-chat-ai">چت AI</a>
+        <a class="chat-admin" id="open-chat-admin">چت Admin</a>
+
+        <div class="pages-chat" id="pages-chat-ai">
+            <div class="part-chat">
+                <div class="info-support">
+                    <div class="support-chat">
+                        <i class="fa-solid fa-robot"></i>
+                        <p>دستیار هوش مصنوعی</p>
+                    </div>
+
+                    <i class="fa-solid fa-xmark" id="close-chat-ai"></i>
+                </div>
+
+                <div class="part-messages"></div>
+
+                <div class="send-messages">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <input type="text" placeholder="پیام خود را بنویسید...">
+                </div>
+            </div>
+        </div>
+
+        <div class="pages-chat" id="pages-chat-admin">
+            <div class="part-chat">
+                <div class="info-support">
+                    <div class="support-chat">
+                        <i class="fa-solid fa-robot"></i>
+                        <p>پشتیبانی ادمین</p>
+                    </div>
+
+                    <i class="fa-solid fa-xmark" id="close-chat-admin"></i>
+                </div>
+
+                <div class="part-messages"></div>
+
+                <div class="send-messages">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <input type="text" placeholder="پیام خود را بنویسید...">
+                </div>
+            </div>
+        </div>
     </div>
-    
+
     <a href="contact_us.html" class="contact-us-fixed">تماس با ما</a>
 
 
-    <script src="script.js"></script>
+    <script>
+        let support = document.querySelector(".support")
+
+        support.addEventListener("click", function name(params) {
+            let chat_ai = document.getElementById("open-chat-ai")
+            let chat_admin = document.getElementById("open-chat-admin")
+
+            chat_ai.classList.toggle("chat-ai-move")
+            chat_admin.classList.toggle("chat-admin-move")
+        })
+
+
+        let open_chat_ai = document.getElementById("open-chat-ai")
+        let pages_chat_ai = document.getElementById("pages-chat-ai")
+        open_chat_ai.addEventListener("click", function name(params) {
+            pages_chat_ai.classList.toggle("show-chat")
+        })
+
+        let open_chat_admin = document.getElementById("open-chat-admin")
+        let pages_chat_admin = document.getElementById("pages-chat-admin")
+        open_chat_admin.addEventListener("click", function name(params) {
+            pages_chat_admin.classList.toggle("show-chat")
+        })
+
+        let close_chat_ai = document.getElementById("close-chat-ai")
+        close_chat_ai.addEventListener("click", function name(params) {
+            pages_chat_ai.classList.remove("show-chat")
+        })
+
+        let close_chat_admin = document.getElementById("close-chat-admin")
+        close_chat_admin.addEventListener("click", function name(params) {
+            pages_chat_admin.classList.remove("show-chat")
+        })
+        
+    </script>
 </body>
 
 </html>

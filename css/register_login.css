@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: all_text;
+    src: url(../assets/font/Gandom.woff);
+}
+
+:root {
+    --primary--color: #011A39;
+    --secondary-color: #041F45;
+    --background-color: #EFF6FE;
+    --color-symbol: #F7C41D;
+    --color-font: white;
+
+
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: all_text;
+
+}
+
+.form-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80vw;
+    max-width: 60vh;
+
+    top: 50%;
+    right: 50%;
+    position: fixed;
+    transform: translate(50%, -50%);
+
+    background-color: white;
+    padding: 20px;
+    border: 1px solid var(--primary--color);
+    border-radius: 30px;
+}
+
+.form-registration {
+    display: block;
+}
+
+.tab-forms {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: inherit;
+    background-color: var(--background-color);
+
+}
+
+.action-button {
+    background-color: var(--primary--color);
+    color: var(--background-color);
+}
+
+
+
+.content-form span {
+    color: var(--primary--color);
+    font-weight: bold;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+
+}
+
+.content-form p {
+    color: var(--primary--color);
+    font-weight: bold;
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
+    opacity: 0.5;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forms label {
+    position: relative;
+
+}
+
+
+.forms input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--background-color);
+    width: 100%;
+
+}
+
+.forms input::placeholder {
+    color: var(--primary--color);
+    opacity: 0.5;
+    font-family: inherit;
+
+}
+
+.input-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-checkbox span {
+    color: #686de0;
+    font-size: clamp(0.6rem, 0.9vw, 1rem);
+
+}
+
+.input-checkbox p {
+    font-size: clamp(0.6rem, 0.9vw, 1.5rem);
+
+}
+
+.input-checkbox input {
+    width: 5%;
+}
+
+.btn-registration {
+    background-color: var(--color-symbol);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+/* ====================== ============== */
+
+
+.form-login {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkbox-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-login input {
+    width: 10%;
+}
+
+.checkbox-login p{
+    font-size: clamp(0.6rem, 0.9vw, 10rem);
+}
+
+.forget-password{
+    text-decoration: none;
+    color: #686de0;
+    font-size: clamp(0.6rem, 0.9vw, 10rem);
+}
+
+.input-checkbox-login {
+    display: flex;
+    justify-content: space-between;
+}

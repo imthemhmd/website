@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/positions.css">
+    <link rel="stylesheet" href="css/register_login.css">
+    <title>ثبت نام | ورود</title>
+</head>
+
+<body>
+    <!-- ======== Register | Login ======== -->
+    <section class="form-panel">
+        <div class="tab-forms">
+            <button class="btn action-button" id="btn-registration">ثبت نام</button>
+            <button class="btn" id="btn-login">ورود</button>
+        </div>
+
+        <div class="form-registration" id="form-registration">
+            <div class="content-form">
+                <span>ثبت نام در الکتروتجهیز</span>
+                <p>برای دسترسی به تمامی امکانات سایت،</p>
+                <p>اطلاعات خود را وارد کنید.</p>
+            </div>
+            <form action="" class="forms">
+                <label for="">
+                    <input type="text" placeholder="نام و نام خانوادگی">
+                </label>
+
+                <label for="">
+                    <input type="text" name="" id="" placeholder="شماره موبایل">
+                </label>
+
+                <label for="">
+                    <input type="text" name="" id="" placeholder="ایمیل(اختیاری)">
+                </label>
+
+
+                <label for="">
+                    <input type="text" name="" id="" placeholder="رمز عبور">
+                </label>
+
+                <label for="">
+                    <input type="text" name="" id="" placeholder="تکرار رمز عبور">
+                </label>
+
+                <label for="" class="input-checkbox">
+                    <input type="checkbox">
+                    <p>من با <span>قوانین</span> و <span>مقررات موافقم</span></p>
+                </label>
+
+                <button class="btn-registration">ثبت نام</button>
+            </form>
+        </div>
+
+        <div class="form-login" id="form-login">
+            <div class="content-form">
+                <span>ورود به حساب کاربری</span>
+                <p>برای ادامه خرید و مشاهده سفارش ها وارد حساب خود شوید.</p>
+            </div>
+
+            <form action="" class="forms">
+                <label for="">
+                    <input type="text" placeholder="شماره موبایل">
+                </label>
+
+                <label for="">
+                    <input type="password" placeholder="رمز عبور">
+                </label>
+
+                <label for="" class="input-checkbox-login">
+                    <div class="checkbox-login">
+                        <input type="checkbox">
+                        <p>مرا به خاطر بسپار</p>
+                    </div>
+
+                    <a href="" class="forget-password">فراموشی رمز عبور؟</a>
+                </label>
+
+                <button class="btn-registration">ورود</button>
+            </form>
+        </div>
+
+    </section>
+
+    <script>
+        let btn_click_registration = document.getElementById("btn-registration")
+        let btn_click_login = document.getElementById("btn-login")
+
+        let form_registration = document.getElementById("form-registration")
+        let form_login = document.getElementById("form-login")
+
+        btn_click_registration.addEventListener("click", function name(params) {
+            btn_click_registration.classList.add("action-button")
+            form_registration.style.display = "block"
+
+            btn_click_login.classList.remove("action-button")
+            form_login.style.display = "none"
+        })
+
+        btn_click_login.addEventListener("click", function name(params) {
+            btn_click_registration.classList.remove("action-button")
+            form_registration.style.display = "none"
+
+            btn_click_login.classList.add("action-button")
+            form_login.style.display = "flex"
+        })
+    </script>
+</body>
+
+</html>

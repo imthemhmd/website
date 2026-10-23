@@ -83,6 +83,10 @@ header {
 
 }
 
+.login-purchase a {
+    color: var(--color-font);
+}
+
 .icon-search {
     display: none;
 }
